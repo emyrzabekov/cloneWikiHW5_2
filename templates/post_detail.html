@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="detail_card">
+<!--    {% for post in posts_list %}-->
+    <div class="detail_card-body">
+        <h5 class="card-title">{{post.title}}</h5>
+        <p class="card-text">{{post.body}}</p>
+        <img src={{post.image}}>
+    </div>
+<!--    {% endfor %}-->
+</div>
+
+{% endblock  %}
