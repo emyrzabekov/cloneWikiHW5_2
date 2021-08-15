@@ -23,9 +23,12 @@
           </a>
           <a href="{% url 'index' %}" class="btn btn-outline-success">
           <button class="btn btn-outline-success" type="button">Категории</button></a>
-          <button class="btn btn-sm align-middle btn-outline-secondary" type="button">О нашем сайте</button>
-          <button class="btn btn-sm align-middle btn-outline-secondary" type="button">Добавить новую категорю</button>
-          <button class="btn btn-sm align-middle btn-outline-secondary" type="button">Добавить новую статью</button>
+          <a href="{% url 'about' %}" class="btn btn-sm align-middle btn-outline-secondary">
+          <button class="btn btn-sm align-middle btn-outline-secondary" type="button">О нашем сайте</button></a>
+          <a href="{% url 'category_add' %}" class="btn btn-sm align-middle btn-outline-secondary">
+          <button class="btn btn-sm align-middle btn-outline-secondary" type="button">Добавить новую категорю</button></a>
+          <a href="{% url 'post_add' %}" class="btn btn-sm align-middle btn-outline-secondary">
+          <button class="btn btn-sm align-middle btn-outline-secondary" type="button">Добавить новую статью</button></a>
           <button class="btn btn-sm align-middle btn-outline-secondary" type="button">Выйти</button>
       </form>
     </nav>
